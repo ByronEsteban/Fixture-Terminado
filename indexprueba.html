@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style2.css">
+  <title>Fixture Qatar 2022</title>
+</head>
+
+<body>
+  <h1>Fixture Qatar 2022</h1>
+  <br>
+  <div class="texto">Podés ver las tablas clickeando abajo:</div>
+  <br>
+  <label id="LAB">Grupo A</label><input onclick="GA(event)" type="checkbox" value="Grupo A">
+  <label id="LAB">Grupo B</label><input onclick="GB(event)" type="checkbox" value="Grupo B">
+  <label id="LAB">Grupo C</label><input onclick="GC(event)" type="checkbox" value="Grupo C">
+  <label id="LAB">Grupo D</label><input onclick="GD(event)" type="checkbox" value="Grupo D">
+  <label id="LAB">Grupo E</label><input onclick="GE(event)" type="checkbox" value="Grupo E">
+  <label id="LAB">Grupo F</label><input onclick="GF(event)" type="checkbox" value="Grupo F">
+  <label id="LAB">Grupo G</label><input onclick="GG(event)" type="checkbox" value="Grupo G">
+  <label id="LAB">Grupo H</label><input onclick="GH(event)" type="checkbox" value="Grupo H">
+  <br>
+  <br>
+  <div id="tables" class="tables">
+    <div id="g-A" class="grupos">
+      <h2>Grupo A</h2>
+      <div class="fecha">
+        <div class="match">
+          <h4>Fecha 1</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Senegal</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Países Bajos</label>
+            <input id='af11' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Qatar</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Ecuador</label>
+            <input id='af12' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 2</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Qatar</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Senegal</label>
+            <input id='af21' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Países Bajos</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Ecuador</label>
+            <input id='af22' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 3</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Países Bajos</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Qatar</label>
+            <input id='af31' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Ecuador</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Senegal</label>
+            <input id='af32' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="g-B" class="grupos">
+      <h2>Grupo B</h2>
+      <div class="fecha">
+        <div class="match">
+          <h4>Fecha 1</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Inglaterra</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Irán</label>
+            <input id='bf11' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>EEUU</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Gales</label>
+            <input id='bf12' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 2</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Gales</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Irán</label>
+            <input id='bf21' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Inglaterra</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>EEUU</label>
+            <input id='bf22' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 3</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Gales</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Inglaterra</label>
+            <input id='bf31' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Irán</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>EEUU</label>
+            <input id='bf32' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="g-C" class="grupos">
+      <h2>Grupo C</h2>
+      <div class="fecha">
+        <div class="match">
+          <h4>Fecha 1</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Argentina</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>A. Saudita</label>
+            <input id='cf11' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>México</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Polonia</label>
+            <input id='cf12' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 2</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Polonia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>A. Saudita</label>
+            <input id='cf21' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Argentina</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>México</label>
+            <input id='cf22' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 3</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Polonia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Argentina</label>
+            <input id='cf31' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>A. Saudita</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>México</label>
+            <input id='cf32' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="g-D" class="grupos">
+      <h2>Grupo D</h2>
+      <div class="fecha">
+        <div class="match">
+          <h4>Fecha 1</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Dinamarca</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Túnez</label>
+            <input id='df11' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Francia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Australia</label>
+            <input id='df12' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 2</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Francia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Dinamarca</label>
+            <input id='df21' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Túnez</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Australia</label>
+            <input id='df22' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 3</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Túnez</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Francia</label>
+            <input id='df31' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Australia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Dinamarca</label>
+            <input id='df32' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="g-E" class="grupos">
+      <h2>Grupo E</h2>
+      <div class="fecha">
+        <div class="match">
+          <h4>Fecha 1</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Costa Rica</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>España</label>
+            <input id='ef11' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Japón</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Alemania</label>
+            <input id='ef12' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 2</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Alemania</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>España</label>
+            <input id='ef21' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Japón</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Costa Rica</label>
+            <input id='ef22' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 3</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Japón</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>España</label>
+            <input id='ef31' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Costa Rica</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Alemania</label>
+            <input id='ef32' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="g-F" class="grupos">
+      <h2>Grupo F</h2>
+      <div class="fecha">
+        <div class="match">
+          <h4>Fecha 1</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Bélgica</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Canadá</label>
+            <input id='ff11' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Marruecos</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Croacia</label>
+            <input id='ff12' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 2</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Bélgica</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Marruecos</label>
+            <input id='ff21' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Croacia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Canadá</label>
+            <input id='ff22' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 3</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Croacia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Bélgica</label>
+            <input id='ff31' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Canadá</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Marruecos</label>
+            <input id='ff32' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="g-G" class="grupos">
+      <h2>Grupo G</h2>
+      <div class="fecha">
+        <div class="match">
+          <h4>Fecha 1</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Brasil</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Serbia</label>
+            <input id='gf11' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Suiza</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Camerún</label>
+            <input id='gf12' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 2</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Suiza</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Brasil</label>
+            <input id='gf21' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Serbia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Camerún</label>
+            <input id='gf22' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 3</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Serbia</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Suiza</label>
+            <input id='gf31' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Camerún</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Brasil</label>
+            <input id='gf32' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="g-H" class="grupos">
+      <h2>Grupo H</h2>
+      <div class="fecha">
+        <div class="match">
+          <h4>Fecha 1</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Portugal</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Ghana</label>
+            <input id='hf11' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Uruguay</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Corea del Sur</label>
+            <input id='hf12' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 2</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Uruguay</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Portugal</label>
+            <input id='hf21' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Ghana</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Corea del Sur</label>
+            <input id='hf22' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+        <div class="match">
+          <h4>Fecha 3</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label>Ghana</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Uruguay</label>
+            <input id='hf31' min='0' type="submit" value="&#x2714;">
+          </form>
+          <hr>
+          <form onsubmit="handleSubmit(event)">
+            <label>Corea del Sur</label>
+            <input min='0' type="number" size="2" required="required">
+            <input min='0' type="number" size="2" required="required">
+            <label>Portugal</label>
+            <input id='hf32' min='0' type="submit" value="&#x2714;">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="texto">Y acá está para elegir quiénes llegan a la final:
+    <br>
+    <div class="instruccion">
+      *Llenar TODOS los octavos primero, luego todos los cuartos y así (sino tira error)
+      <br>
+      *No dejar ningún ítem como "Seleccionar país"
+    </div>
+  </div>
+  <br>
+  <div class="finales">
+    <div>
+      <label id="fin">Octavos</label>
+      <div>
+        <select id="A1" name="pais">
+          <option>Seleccionar País</option>
+          <option>Qatar</option>
+          <option>Senegal</option>
+          <option>Países Bajos</option>
+          <option>Ecuador</option>
+        </select>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="octavos(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <select id="B2" name="pais">
+          <option>Seleccionar País</option>
+          <option>Inglaterra</option>
+          <option>Irán</option>
+          <option>EEUU</option>
+          <option>Gales</option>
+        </select>
+      </div>
+      <div>
+        <select id="C1" name="pais">
+          <option>Seleccionar País</option>
+          <option>Argentina</option>
+          <option>A. Saudita</option>
+          <option>México</option>
+          <option>Polonia</option>
+        </select>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="octavos(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <select id="D2" name="pais">
+          <option>Seleccionar País</option>
+          <option>Francia</option>
+          <option>Australia</option>
+          <option>Dinamarca</option>
+          <option>Túnez</option>
+        </select>
+      </div>
+      <div>
+        <select id="E1" name="pais">
+          <option>Seleccionar País</option>
+          <option>España</option>
+          <option>Costa Rica</option>
+          <option>Alemania</option>
+          <option>Japón</option>
+        </select>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="octavos(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <select id="F2" name="pais">
+          <option>Seleccionar País</option>
+          <option>Bélgica</option>
+          <option>Canadá</option>
+          <option>Marruecos</option>
+          <option>Croacia</option>
+        </select>
+      </div>
+      <div>
+        <select id="G1" name="pais">
+          <option>Seleccionar País</option>
+          <option>Brasil</option>
+          <option>Serbia</option>
+          <option>Suiza</option>
+          <option>Camerún</option>
+        </select>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="octavos(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <select id="H2" name="pais">
+          <option>Seleccionar País</option>
+          <option>Portugal</option>
+          <option>Ghana</option>
+          <option>Uruguay</option>
+          <option>Corea del Sur</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label id="fin">Cuartos</label>
+      <div class="cuar">
+        <input id="Cuar1" readonly>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="cuartos(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <input id="Cuar2" readonly>
+      </div>
+      <div class="cuar">
+        <input id="Cuar3" readonly />
+        <input id="cuartos2A" type="number" min="0" required="required" />
+        <input type="button" onclick="cuartos(event)" value="&#x2714;">
+        <input id="cuartos1B" type="number" min="0" required="required" />
+        <input id="Cuar4" readonly />
+      </div>
+    </div>
+    <div>
+      <label id="fin">Semifinales</label>
+      <div class="semi">
+        <input id="S1" readonly>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="semifinales(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <input id="S2" readonly>
+      </div>
+    </div>
+    <div>
+      <label id="fin">LA FINAL !!!</label>
+      <div class="fin">
+        <input id="FI1" readonly>
+        <input type="number" min="0" required="required" />
+        <input id="botonfin" type="button" onclick="final(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <input id="FI2" readonly>
+      </div>
+    </div>
+    <div>
+      <label id="fin">Semifinales</label>
+      <div class="semi">
+        <input id="S3" readonly>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="semifinales(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <input id="S4" readonly>
+      </div>
+    </div>
+    <div>
+      <label id="fin">Cuartos</label>
+      <div class="cuar">
+        <input id="Cuar5" readonly>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="cuartos(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <input id="Cuar6" readonly>
+      </div>
+      <div class="cuar">
+        <input id="Cuar7" readonly />
+        <input id="cuartos2A" type="number" min="0" required="required" />
+        <input type="button" onclick="cuartos(event)" value="&#x2714;">
+        <input id="cuartos1B" type="number" min="0" required="required" />
+        <input id="Cuar8" readonly />
+      </div>
+    </div>
+    <div>
+      <label id="fin">Octavos</label>
+      <div class="oct">
+        <select id="B1" name="pais">
+          <option>Seleccionar País</option>
+          <option>Inglaterra</option>
+          <option>Irán</option>
+          <option>EEUU</option>
+          <option>Gales</option>
+        </select>
+        <input type="number" min="0" required="required" />
+        <input type="button" onclick="octavos(event)" value="&#x2714;">
+        <input type="number" min="0" required="required" />
+        <select id="A2" name="pais">
+          <option>Seleccionar País</option>
+          <option>Qatar</option>
+          <option>Senegal</option>
+          <option>Países Bajos</option>
+          <option>Ecuador</option>
+        </select>
+      </div>
+      <div class="oct">
+        <select id="D1" name="pais">
+          <option>Seleccionar País</option>
+          <option>Francia</option>
+          <option>Australia</option>
+          <option>Dinamarca</option>
+          <option>Túnez</option>
+        </select>
+        <input id="cuartos2A" type="number" min="0" required="required" />
+        <input type="button" onclick="octavos(event)" value="&#x2714;">
+        <input id="cuartos1B" type="number" min="0" required="required" />
+        <select id="C2" name="pais">
+          <option>Seleccionar País</option>
+          <option>Argentina</option>
+          <option>A. Saudita</option>
+          <option>México</option>
+          <option>Polonia</option>
+        </select>
+      </div>
+      <div class="oct">
+        <select id="F1" name="pais">
+          <option>Seleccionar País</option>
+          <option>Bélgica</option>
+          <option>Canadá</option>
+          <option>Marruecos</option>
+          <option>Croacia</option>
+        </select>
+        <input id="cuartos1C" type="number" min="0" required="required" />
+        <input type="button" onclick="octavos(event)" value="&#x2714;">
+        <input id="cuartos2D" type="number" min="0" required="required" />
+        <select id="E2" name="pais">
+          <option>Seleccionar País</option>
+          <option>España</option>
+          <option>Costa Rica</option>
+          <option>Alemania</option>
+          <option>Japón</option>
+        </select>
+      </div>
+      <div class="oct">
+        <select id="H1" name="pais">
+          <option>Seleccionar País</option>
+          <option>Portugal</option>
+          <option>Ghana</option>
+          <option>Uruguay</option>
+          <option>Corea del Sur</option>
+        </select>
+        <input id="cuartos2C" type="number" min="0" required="required">
+        <input type="button" onclick="octavos(event)" value="&#x2714;">
+        <input id="cuartos1D" type="number" min="0" required="required">
+        <select id="G2" name="pais">
+          <option>Seleccionar País</option>
+          <option>Brasil</option>
+          <option>Serbia</option>
+          <option>Suiza</option>
+          <option>Camerún</option>
+        </select>
+
+      </div>
+    </div>
+  </div>
+  <div class="restart">
+
+  </div>
+    <script type="text/javascript" src="scriptprueba.js"></script>
+</body>
+
+</html>
